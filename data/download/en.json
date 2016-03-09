@@ -1,0 +1,12 @@
+{
+    "page_title" : "Download",
+    "download_189_latest" : "Gravestone mod - Graves 1.0.0 (Minecraft 1.8.9)",
+    "download_1710_latest" : "Gravestone mod 2.16.0 (Minecraft 1.7.10, Forge 10.13.2.1232)",
+    "download_previous" : "Previous versions",
+    
+    "installation_title" : "Installation",
+    "installation_line1" : "Download and install",
+    "installation_line2" : "Place jar file for this mod into your 'mods' folder",
+
+    "warning_1_8" : "Since minecraft 1.8 this mod was splitted on two parts - \"Graves\"(only graves) and \"Extended\"(all another content)"
+}

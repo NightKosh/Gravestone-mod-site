@@ -1,0 +1,59 @@
+{
+    "pageTitle": "Credits",
+    "nightkosh": "developer of GraveStone mod",
+
+    "code" : {
+        "title": "Code",
+        "nuchaz": "enchanted blocks renderer code.",
+        "senpaisubaraki": "\"Tinker Construct\" and \"RpgInventory\" compatibility code.",
+        "da3dsoul": "\"Twilight Forest\" compatibility, some fixes in \"Forestry\" compatibility.",
+        "portablejim": "mod specific entity ids",
+        "noobidoo": "update for minecraft 1.7.10",
+        "crazypants": "support for EnderIO Soulbound enchant"
+    },
+
+    "textures" : {
+        "title": "Textures",
+        "goodlyay": "graves plates, chisel and undertaker textures.",
+        "gentleStream": "old Bone blocks textures and \"green\" zombie pets textures.",
+        "nokuru": "Bone blocks textures."
+    },
+
+    "localization" : {
+        "title": "Localization",
+        "mickyfoley": "German localization.",
+        "senpaisubaraki": "French localization.",
+        "bendem": "French localization.",
+        "mazdallier": "French localization.",
+        "dorajdj": "Chinese localization.",
+        "antonysze": "Chinese localization.",
+        "lovin000": "Chinese localization.",
+        "mrkwtkr": "Chinese localization.",
+        "zernicalo": "Spanish localization.",
+        "cronosuscz": "Czech localization.",
+        "DeRigeurEx": "Czech localization.",
+        "lorenzodcc": "Portuguese localization.",
+        "sunconure11": "English localization(some fixes).",
+        "adaptivity": "a lot of fixes in all laguages."
+    },
+
+    "texturepack" : {
+        "title": "Texture packs",
+        "zernicalo": "Sphax texture pack addon.",
+        "druha": "vonDoomCraft texture pack addon."
+    },
+
+    "another" : {
+        "title": "Another",
+        "adaptivity": "some fixes and improvents.",
+        "grxryder": "a lot of cool advices and ideas."
+    },
+
+    "donate" : {
+        "title": "Special thanks to those who give me a donation",
+        "mikel": "support via patreon.",
+        "Agathezol": "support via patreon."
+    },
+
+    "creditsForgot": "I'm greatly apologise If I forgot to mention you. Please inform me about it and I'll update this list shortly."
+}

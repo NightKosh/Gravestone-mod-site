@@ -1,0 +1,14 @@
+{
+    "graves" : {
+        "link" : "?page=changelog",
+        "title" : "Graves"
+    },
+    "extended" : {
+        "link" : "?page=changelog&sub_page=extended",
+        "title" : "Extended"
+    },
+    "old" : {
+        "link" : "?page=changelog&sub_page=old",
+        "title" : "До 1.8"
+    }
+}

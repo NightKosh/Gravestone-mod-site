@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Gravestone mod</title>
+
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="keywords" content="Gravestone, mod, minecraft, graves, catacombs, undead, necromancy"/>
+    <meta name="description" content=""/>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/libs/bootstrap.min.css" rel="stylesheet">
+    <link href="css/libs/angular-bootstrap-lightbox.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+
+    <script src="js/libs/angular.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/libs/angular-youtube-embed.js"></script>
+
+    <script src="js/libs/ui-bootstrap-tpls.js"></script>
+    <script src="js/libs/angular-bootstrap-lightbox.min.js"></script>
+
+    <script src="js/application.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/changelog.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/credits.js"></script>
+</head>
+<body ng-app="app" ng-controller="GlobalPageCtrl">
+<div id="header">
+    <div id="header_content">
+        <h1>
+            <a ng-href="{{globalData.titleLink}}" target="_parent">Gravestone mod</a>
+        </h1>
+
+        <div id="lang_bar">
+            <a id="en_link" ng-href="{{globalData.enLink}}"></a>
+            <a id="ru_link" ng-href="{{globalData.ruLink}}"></a>
+        </div>
+
+        <ul>
+            <li><a class="forum" title="{{globalData.header_forum}}" target="_blank"
+                   href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1288082"></a></li>
+            <li><a class="patreon" title="{{globalData.header_patreon}}" target="_blank"
+                   href="https://www.patreon.com/nightkosh"></a></li>
+            <li><a class="twitter" title="{{globalData.header_twitter}}" target="_blank"
+                   href="https://twitter.com/NightKosh"></a></li>
+            <li><a class="github" title="{{globalData.header_github}}" target="_blank"
+                   href="https://github.com/NightKosh/Gravestone-mod-Graves"></a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="preview_image"></div>
+
+<div id="menu">
+    <ul>
+        <li><a ng-href="{{globalData.menuDownloadLink}}">{{globalData.menu_download}}</a></li>
+        <li><a ng-href="{{globalData.menuAboutLink}}">{{globalData.menu_about}}</a></li>
+        <li><a ng-href="{{globalData.menuReviewLink}}">{{globalData.menu_review}}</a></li>
+        <li><a ng-href="{{globalData.menuChangelogLink}}">{{globalData.menu_changelog}}</a></li>
+        <li><a ng-href="{{globalData.menuFaqLink}}">{{globalData.menu_faq}}</a></li>
+        <li><a ng-href="{{globalData.menuCreditsLink}}">{{globalData.menu_credits}}</a></li>
+    </ul>
+</div>
+
+<div id="content_wrapper">
+    <div id="content" ng-include="contentTemplatePath"></div>
+
+    <div id="sum_menu" ng-include="subMenuTemplatePath"></div>
+</div>
+
+<div id="footer">
+    <div>
+        <p><span>{{globalData.footer}}</span>
+            <a href="http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GPLv3</a>.
+        </p>
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61898732-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29831729 = new Ya.Metrika({id:29831729,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+
+
+
+</script>
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/29831729" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
