@@ -127,6 +127,9 @@ h4 {
 #header_content ul li a:hover {
 	color: #c0f048;
 }
+#header_content ul li a.nightkosh {
+	background-image: url("../images/user-64.png");
+}
 #header_content ul li a.forum {
 	background-image: url("../images/cube.png");
 }
