@@ -34,7 +34,7 @@
     <script src="js/credits.js"></script>
 </head>
 <body ng-app="app" ng-controller="GlobalPageCtrl">
-<div id="header">
+<header>
     <div id="header_content">
         <h1>
             <a ng-href="{{globalData.titleLink}}" target="_parent">Gravestone mod</a>
@@ -58,7 +58,7 @@
                    href="https://github.com/NightKosh/Gravestone-mod-Graves"></a></li>
         </ul>
     </div>
-</div>
+</header>
 
 <div id="preview_image"></div>
 
@@ -79,13 +79,14 @@
     <div id="sum_menu" ng-include="subMenuTemplatePath"></div>
 </div>
 
-<div id="footer">
+<footer>
     <div>
         <p><span>{{globalData.footer}}</span>
             <a href="http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GPLv3</a>.
         </p>
     </div>
-</div>
+</footer>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -30,14 +30,14 @@ a {
     text-decoration: none;
     font-weight: normal;
   }
-//  &:active {
-//    color: #FFFF00;
-//    text-decoration: underline;
-//  }
-//  &:hover {
-//    color: ;
-//    text-decoration: underline;
-//  }
+  //  &:active {
+  //    color: #FFFF00;
+  //    text-decoration: underline;
+  //  }
+  //  &:hover {
+  //    color: ;
+  //    text-decoration: underline;
+  //  }
 }
 
 h1 {
@@ -69,64 +69,63 @@ h4 {
   font-weight: bold;
 }
 
-#header {
+header {
   width: 100%;
   height: 100px;
   background: #191d20;
   border-bottom: 1px solid @text_color;
-}
-
-#header_content {
-  width: 980px;
-  height: 100%;
-  margin: 0 auto;
-  h1 {
-    float: left;
-    width: 300px;
-    margin-left: 50px;
-    padding: 35px 0 0 0;
-    a {
-      font-size: 40px;
-      color: @link_header;
-      text-decoration: none;
-      &:hover {
-        font-weight: normal;
-        text-decoration: none;
-        text-shadow: 1px 1px 7px @link_header;
-      }
-    }
-  }
-  ul {
-    float: right;
-    margin: 15px 50px 0 0;
-    padding: 0px;
-    list-style: none;
-    li {
-      margin: 0 0 0 25px;
-      display: inline-block;
+  #header_content {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    h1 {
+      float: left;
+      width: 300px;
+      margin-left: 50px;
+      padding: 35px 0 0 0;
       a {
-        display: inline-block;
-        width: 64px;
-        height: 64px;
-        background-size: cover;
+        font-size: 40px;
+        color: @link_header;
+        text-decoration: none;
         &:hover {
-          color: @link_color;
+          font-weight: normal;
+          text-decoration: none;
+          text-shadow: 1px 1px 7px @link_header;
         }
       }
-      a.nightkosh {
-        background-image: url("../images/user-64.png");
-      }
-      a.forum {
-        background-image: url("../images/cube.png");
-      }
-      a.twitter {
-        background-image: url("../images/twitter-64.png");
-      }
-      a.patreon {
-        background-image: url("../images/patreon.png");
-      }
-      a.github {
-        background-image: url("../images/github-11-64.png");
+    }
+    ul {
+      float: right;
+      margin: 15px 50px 0 0;
+      padding: 0px;
+      list-style: none;
+      li {
+        margin: 0 0 0 25px;
+        display: inline-block;
+        a {
+          display: inline-block;
+          width: 64px;
+          height: 64px;
+          background-size: cover;
+          &:hover {
+            color: @link_color;
+          }
+        }
+        a.nightkosh {
+          background-image: url("../images/user-64.png");
+        }
+        a.forum {
+          background-image: url("../images/cube.png");
+        }
+        a.twitter {
+          background-image: url("../images/twitter-64.png");
+        }
+        a.patreon {
+          background-image: url("../images/patreon.png");
+        }
+        a.github {
+          background-image: url("../images/github-11-64.png");
+        }
       }
     }
   }
@@ -135,19 +134,20 @@ h4 {
 #lang_bar {
   float: right;
   height: 64px;
-  width: 20px;
+  width: 32px;
   margin: 12px 0 0 -20px;
   a {
     display: inline-block;
     height: 32px;
     width: 32px;
-    background: center center no-repeat;
-  }
-  a#en_link {
-    background-image: url("../images/en.png");
-  }
-  a#ru_link {
-    background-image: url("../images/ru.png");
+    background-repeat: no-repeat;
+    background-image: url("../images/lang_sprite.png");
+    &#en_link {
+      background-position: 0 0;
+    }
+    &#ru_link {
+      background-position: 0 -32px;
+    }
   }
 }
 
@@ -280,7 +280,7 @@ ul.video {
   }
 }
 
-#footer {
+footer {
   width: 100%;
   margin: -25px auto 0;
   background: #2A2F32;
