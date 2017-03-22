@@ -48,6 +48,7 @@ h4 {
 }
 header {
   width: 100%;
+  min-width: 980px;
   height: 100px;
   background: #191d20;
   border-bottom: 1px solid #8a8a79;
@@ -129,12 +130,14 @@ header #lang_bar a#ru_link {
 }
 #preview_image {
   width: 100%;
+  min-width: 980px;
   height: 500px;
   background: url("../images/background.png") center center no-repeat #000000;
   background-size: cover;
 }
 #menu {
   width: 100%;
+  min-width: 980px;
   height: 90px;
   background-image: linear-gradient(to bottom, #9ccc23 0%, #81a00f 100%);
 }
@@ -199,17 +202,17 @@ header #lang_bar a#ru_link {
   width: 100%;
   height: 365px;
 }
-#sum_menu {
+#content_wrapper #sum_menu {
   float: right;
   width: 150px;
 }
-#sum_menu > ul {
+#content_wrapper #sum_menu > ul {
   width: 100%;
   margin-bottom: 15px;
   padding: 15px 0;
   font-size: 20px;
 }
-#sum_menu > ul > li {
+#content_wrapper #sum_menu > ul > li {
   padding-bottom: 10px;
 }
 ul.video {
@@ -244,6 +247,7 @@ ul.video li:last-child {
 }
 footer {
   width: 100%;
+  min-width: 980px;
   margin: -25px auto 0;
   background: #2A2F32;
 }
