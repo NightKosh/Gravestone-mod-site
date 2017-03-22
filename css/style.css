@@ -75,7 +75,7 @@ header #header_content h1 a:hover {
 }
 header #header_content ul {
   float: right;
-  margin: 15px 50px 0 0;
+  margin: 12px 50px 0 0;
   padding: 0px;
   list-style: none;
 }
@@ -85,45 +85,46 @@ header #header_content ul li {
 }
 header #header_content ul li a {
   display: inline-block;
-  width: 64px;
-  height: 64px;
-  background-size: cover;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/links_sprite.png");
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
 }
 header #header_content ul li a:hover {
   color: #c0f048;
-}
-header #header_content ul li a.nightkosh {
-  background-image: url("../images/user-64.png");
+  background-position-y: -70px;
 }
 header #header_content ul li a.forum {
-  background-image: url("../images/cube.png");
-}
-header #header_content ul li a.twitter {
-  background-image: url("../images/twitter-64.png");
+  background-position-x: -70px;
 }
 header #header_content ul li a.patreon {
-  background-image: url("../images/patreon.png");
+  background-position-x: -140px;
+}
+header #header_content ul li a.twitter {
+  background-position-x: -210px;
 }
 header #header_content ul li a.github {
-  background-image: url("../images/github-11-64.png");
+  background-position-x: -280px;
 }
-#lang_bar {
+header #lang_bar {
   float: right;
   height: 64px;
   width: 32px;
   margin: 12px 0 0 -20px;
 }
-#lang_bar a {
+header #lang_bar a {
   display: inline-block;
   height: 32px;
   width: 32px;
   background-repeat: no-repeat;
   background-image: url("../images/lang_sprite.png");
 }
-#lang_bar a#en_link {
+header #lang_bar a#en_link {
   background-position: 0 0;
 }
-#lang_bar a#ru_link {
+header #lang_bar a#ru_link {
   background-position: 0 -32px;
 }
 #preview_image {
@@ -135,11 +136,6 @@ header #header_content ul li a.github {
 #menu {
   width: 100%;
   height: 90px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9ccc23), color-stop(1, #81a00f));
-  background-image: -o-linear-gradient(bottom, #9ccc23 0%, #81a00f 100%);
-  background-image: -moz-linear-gradient(bottom, #9ccc23 0%, #81a00f 100%);
-  background-image: -webkit-linear-gradient(bottom, #9ccc23 0%, #81a00f 100%);
-  background-image: -ms-linear-gradient(bottom, #9ccc23 0%, #81a00f 100%);
   background-image: linear-gradient(to bottom, #9ccc23 0%, #81a00f 100%);
 }
 #menu ul {
@@ -173,33 +169,33 @@ header #header_content ul li a.github {
   box-shadow: 0 0 4px black;
   overflow: hidden;
 }
-#content {
+#content_wrapper #content {
   float: left;
   width: 650px;
   padding-right: 40px;
 }
-#content h2 {
+#content_wrapper #content h2 {
   color: #c0f048;
   height: 28px;
   margin: 0 0 17px;
   padding-top: 10px;
   font-size: 24px;
 }
-#content h3 {
+#content_wrapper #content h3 {
   color: #c0f048;
 }
-#content p {
+#content_wrapper #content p {
   text-align: justify;
   margin-bottom: 10px;
 }
-#content ul {
+#content_wrapper #content ul {
   margin-bottom: 20px;
 }
-#content li {
+#content_wrapper #content li {
   list-style: disc;
   margin-left: 15px;
 }
-#content iframe {
+#content_wrapper #content iframe {
   width: 100%;
   height: 365px;
 }
