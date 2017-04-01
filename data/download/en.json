@@ -1,6 +1,9 @@
 {
     "page_title" : "Download",
-    "download_189_latest" : "Gravestone mod - Graves 1.0.0 (Minecraft 1.8.9)",
+    "title_189" : "Minecraft 1.8.9",
+    "download_189_graves_latest" : "Gravestone mod - Graves 1.0.0",
+    "download_189_extended_latest" : "Gravestone mod - Extended 1.0.0",
+    "title_1710" : "Minecraft 1.7.10",
     "download_1710_latest" : "Gravestone mod 2.16.1 (Minecraft 1.7.10, Forge 10.13.2.1232)",
     "download_previous" : "Previous versions",
     

@@ -2,16 +2,19 @@
 <div ng-controller="DownloadCtrl">
     <h2>{{download.page_title}}</h2>
 
-    <a class="download" href="http://adf.ly/3890646/gravestone---graves-100---189" target="_blank">{{download.download_189_latest}}</a>
+    <h2>{{download.title_189}}</h2>
+    <a class="download" href="http://adf.ly/3890646/gravestone-graves-101-189" target="_blank">{{download.download_189_graves_latest}}</a>
+    <a class="download" href="http://adf.ly/3890646/gravestone-extended-100-189" target="_blank">{{download.download_189_extended_latest}}</a>
+
+    <h2>{{download.title_1710}}</h2>
     <a class="download" href="http://adf.ly/3890646/gravestone-2161---1710" target="_blank">{{download.download_1710_latest}}</a>
 
-    <a class="download" href="http://minecraft.curseforge.com/mc-mods/62929-gravestone_mod/files" target="_blank">{{download.download_previous}}</a>
+    <h2>{{download.download_previous}}</h2>
+    <a class="download" href="https://minecraft.curseforge.com/projects/gravestone-mod-graves/files" target="_blank">{{download.download_previous}}</a>
 
     <h3>{{download.installation_title}}</h3>
     <ul>
-        <li><span>{{download.installation_line1}}</span> <a href="http://files.minecraftforge.net/"
-                                                            target="_blank">Forge</a>
-        </li>
+        <li><span>{{download.installation_line1}}</span> <a href="http://files.minecraftforge.net/" target="_blank">Forge</a></li>
         <li>{{download.installation_line2}}</li>
     </ul>
 
