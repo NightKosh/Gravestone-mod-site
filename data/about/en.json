@@ -1,5 +1,5 @@
 {
-    "title" : "About mod - Gravestones",
+    "title" : "Gravestones",
     "line1" : "The gravestones are the main \"components\" of this mod, which are generated at player's death. They will store all your items(can be changed in configs) and some information about your death(the amount of days which you had been living, death type & e.t.c).",
     "line2" : "There are several types of the gravestones. Each of them can be made of different materials. The generated grave type will be chosen randomly(except few special cases), but its material will be based on biome and your level.",
     "line3" : "What about the special cases - they are death by explosion, starving and withering. Your gravestone will look like a charged creeper statue when you were blown up. When you starved to death or withered it will look like a skeleton corpse. Also there are 25% chance that one of your swords will be used as a gravestone.",

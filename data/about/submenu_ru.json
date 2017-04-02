@@ -1,8 +1,13 @@
 {
     "gravestone" : "Могилы",
     "memorial" : "Мемориалы",
+    "execution" : "Execution",
+    "candle" : "Свечи",
     "spawner" : "Спаунеры",
     "blocks" : "Блоки",
-    "candle" : "Свечи",
-    "mobs" : "Мобы"
+    "copses" : "Трупы",
+    "mobs" : "Мобы",
+    "structures" : "Строения",
+    "commands" : "Команды",
+    "configs" : "Настройки"
 }

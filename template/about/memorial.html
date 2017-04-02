@@ -1,0 +1,22 @@
+<div ng-controller="AboutMemorialCtrl">
+    <h2>{{globalData.menu_about}} - {{about.title}}</h2>
+
+    <p>{{about.line1}}</p>
+
+    <p>{{about.line2}}</p>
+    <p>{{about.line3}}</p>
+    <ul class="gallery">
+        <li ng-repeat="image in about.memorialsImg">
+            <a ng-click="openLightboxModal(about.memorialsImg, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+        </li>
+    </ul>
+
+    <p>{{about.line4}}</p>
+    <ul class="gallery">
+        <li ng-repeat="image in about.memorialsMossyImg">
+            <a ng-click="openLightboxModal(about.memorialsMossyImg, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+        </li>
+    </ul>
+
+    <p>{{about.line5}}</p>
+</div>

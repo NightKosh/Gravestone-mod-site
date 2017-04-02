@@ -1,0 +1,8 @@
+{
+    "title" : "Memorials",
+    "line1" : "Memorials are decorative blocks. They are generates randomly in the world. Like gravestones it can show some message.",
+    "line2" : "There are several types of the memorials. Each of them can be made of different materials. The generated memorial type will be chosen randomly(except creeper memorials), its material will be based on biome(except few special cases).",
+    "line3" : "As for creeper memorials they can't be found in the world, or crafted(it can be changed in configs). They are dropped at charged creeper death. Also you can find it in catacombs",
+    "line4" : "Every memorial can be mossy. It happens when it's generated in the jungle or the swamp. Furthermore you can make it mossy by clicking on it with vines in hands. To remove it click on it again with shears.",
+    "line5" : "The memorial can be picked and put at any place. But all information will be saved only if a memorial was picked by a silk touch pickaxe."
+}

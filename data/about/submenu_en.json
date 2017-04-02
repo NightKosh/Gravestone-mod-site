@@ -1,8 +1,13 @@
 {
     "gravestone" : "Gravestones",
     "memorial" : "Memorials",
+    "execution" : "Execution",
+    "candle" : "Candles",
     "spawner" : "Spawners",
     "blocks" : "Blocks",
-    "candle" : "Candles",
-    "mobs" : "Mobs"
+    "copses" : "Copses",
+    "mobs" : "Mobs",
+    "structures" : "Structures",
+    "commands" : "Commands",
+    "configs" : "Configs"
 }
