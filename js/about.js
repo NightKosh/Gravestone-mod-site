@@ -106,6 +106,7 @@ app.controller("AboutMenuCtrl", ['$scope', '$http', 'PageService', function($sco
             $scope.aboutMenu.link_copses = PageService.getLinkWithLangParams("?page=about&sub_page=copses");
             $scope.aboutMenu.link_mobs = PageService.getLinkWithLangParams("?page=about&sub_page=mobs");
             $scope.aboutMenu.link_structures = PageService.getLinkWithLangParams("?page=about&sub_page=structures");
+            $scope.aboutMenu.link_recipes = PageService.getLinkWithLangParams("?page=about&sub_page=recipes");
             $scope.aboutMenu.link_commands = PageService.getLinkWithLangParams("?page=about&sub_page=commands");
             $scope.aboutMenu.link_configs = PageService.getLinkWithLangParams("?page=about&sub_page=configs");
         });
