@@ -333,21 +333,54 @@ a.download {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  li {
-    list-style: none !important;
-    display: inline-block;
-    height: 100px;
-    margin: 0 10px 0 0 !important;
-    width: 100px;
-    a {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      cursor: pointer;
+  border: 1px solid #8a8a79;
+  border-radius: 5px;
+  padding: 7px;
+  min-height: 100px;
+  &.expanded {
+    > ul {
+      max-height: 5000px;
+      transition: max-height 1s ease-in-out;
     }
+    > span {
+      background-position-y: top;
+    }
+  }
+  > ul {
+    max-height: 100px;
+    margin-bottom: 0px !important;
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+    li {
+      list-style: none !important;
+      display: inline-block;
+      height: 100px;
+      margin: 0 10px 0 0 !important;
+      width: 122px;
+      &:nth-child(5n+0) {
+        margin: 0 !important;
+      }
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+  }
+  > span {
+    display: block;
+    width: 57px;
+    height: 25px;
+    margin: 8px auto 0px;
+    cursor: pointer;
+    background-image: url('../images/arrows.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
   }
 }
 

@@ -290,15 +290,35 @@ a.download {
   overflow: hidden;
   width: 100%;
   text-align: center;
+  border: 1px solid #8a8a79;
+  border-radius: 5px;
+  padding: 7px;
+  min-height: 100px;
 }
-.gallery li {
+.gallery.expanded > ul {
+  max-height: 5000px;
+  transition: max-height 1s ease-in-out;
+}
+.gallery.expanded > span {
+  background-position-y: top;
+}
+.gallery > ul {
+  max-height: 100px;
+  margin-bottom: 0px !important;
+  transition: max-height 1s ease-in-out;
+  overflow: hidden;
+}
+.gallery > ul li {
   list-style: none !important;
   display: inline-block;
   height: 100px;
   margin: 0 10px 0 0 !important;
-  width: 100px;
+  width: 122px;
 }
-.gallery li a {
+.gallery > ul li:nth-child(5n+0) {
+  margin: 0 !important;
+}
+.gallery > ul li a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -306,6 +326,17 @@ a.download {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+.gallery > span {
+  display: block;
+  width: 57px;
+  height: 25px;
+  margin: 8px auto 0px;
+  cursor: pointer;
+  background-image: url('../images/arrows.png');
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 .modal-content {
   background-color: #191d20;
