@@ -1,0 +1,10 @@
+{
+    "title" : "Structures",
+    "line1" : "There are few types of structures which can be generated in the world. The most common of them are graves, opened graves and memorials. All generated graves contains some items, and villagers corpses ore skulls in rare cases.",
+    "line2" : "Another group of structures can be found in villages. Those structures are - memorials, cemeteries and undertaker house. Bu default cemeteries combined with undertaker house as a single house, but you can change it in configuration file(set \"GenerateCemeteries\" to \"true\"). In this case only one of them can be generated in village.",
+    "line3" : "The last one is catacombs. This is a rather huge structure which begins at the surface and goes very deep underground. Its entrance is a big graveyard with mausoleum at center, but its true size is much bigger. There are a lot of tunnels inside of it full of graves, spawners, traps, monsters and treasures. At the end you can find Wither, which guard nether portal.",
+    "line4" : "This is a rather rare structure which can be generated only in plains and forest biomes (It can't be generated in hills, mountains, jungle, swamp, desert and water or mushroom biomes). Furthermore it can't be generated in range of 1000 blocks from spawn point, 1500 blocks from another catacombs and 200 block from village.",
+    "line5" : "Every structure can be generated manually by console command:",
+    "line6" : "/gs generate <structure_name> <x_coordinate> <z_coordinate> <direction>",
+    "line7" : "where structure_name is \"grave\", \"opened_grave\", \"memorial\", \"cemetery\", \"undertaker\" or \"catacombs\". Coordinates parameters and direction are optional. You may not entered it. In this case it will use your position and \"north\" direction."
+}

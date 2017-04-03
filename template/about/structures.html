@@ -1,0 +1,29 @@
+<div ng-controller="AboutStructuresCtrl">
+    <h2>{{globalData.menu_about}} - {{about.title}}</h2>
+
+    <p>{{about.line1}}</p>
+    <ul class="gallery">
+        <li ng-repeat="image in about.structuresImg">
+            <a ng-click="openLightboxModal(about.structuresImg, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+        </li>
+    </ul>
+
+    <p>{{about.line2}}</p>
+    <ul class="gallery">
+        <li ng-repeat="image in about.villageImg">
+            <a ng-click="openLightboxModal(about.villageImg, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+        </li>
+    </ul>
+
+    <p>{{about.line3}}</p>
+    <p>{{about.line4}}</p>
+    <ul class="gallery">
+        <li ng-repeat="image in about.catacombsImg">
+            <a ng-click="openLightboxModal(about.catacombsImg, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+        </li>
+    </ul>
+
+    <p>{{about.line5}}</p>
+    <p>{{about.line6}}</p>
+    <p>{{about.line7}}</p>
+</div>
