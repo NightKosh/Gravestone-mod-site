@@ -6,5 +6,5 @@
     "line4" : "This is a rather rare structure which can be generated only in plains and forest biomes (It can't be generated in hills, mountains, jungle, swamp, desert and water or mushroom biomes). Furthermore it can't be generated in range of 1000 blocks from spawn point, 1500 blocks from another catacombs and 200 block from village.",
     "line5" : "Every structure can be generated manually by console command:",
     "line6" : "/gs generate <structure_name> <x_coordinate> <z_coordinate> <direction>",
-    "line7" : "where structure_name is \"grave\", \"opened_grave\", \"memorial\", \"cemetery\", \"undertaker\" or \"catacombs\". Coordinates parameters and direction are optional. You may not entered it. In this case it will use your position and \"north\" direction."
+    "line7" : "where <structure_name> is \"grave\", \"opened_grave\", \"memorial\", \"cemetery\", \"undertaker\" or \"catacombs\". Coordinates parameters and direction are optional. You may not entered it. In this case it will use your position and \"north\" direction."
 }
