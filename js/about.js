@@ -8,27 +8,27 @@ app.controller("AboutCtrl", ['$scope', '$http', 'Lightbox', 'PageService', funct
             $scope.about = data;
 
             $scope.about.playerGravesImg = [
-                    {'thumbUrl': 'images/img/graves/vertical_plates.jpg', 'url': 'images/img/graves/vertical_plates.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/crosses.jpg', 'url': 'images/img/graves/crosses.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/horizontal_plates.jpg', 'url': 'images/img/graves/horizontal_plates.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/celtic_crosses.png', 'url': 'images/img/graves/celtic_crosses.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/obelisks.png', 'url': 'images/img/graves/obelisks.png', 'caption': ''}
+                    {'thumbUrl': 'images/img/graves/thumb/vertical_plates.jpg', 'url': 'images/img/graves/vertical_plates.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/crosses.jpg', 'url': 'images/img/graves/crosses.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/horizontal_plates.jpg', 'url': 'images/img/graves/horizontal_plates.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/celtic_crosses.png', 'url': 'images/img/graves/celtic_crosses.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/obelisks.png', 'url': 'images/img/graves/obelisks.png', 'caption': ''}
                 ];
             $scope.about.specialGravesImg = [
-                    {'thumbUrl': 'images/img/graves/creeper_graves.png', 'url': 'images/img/graves/creeper_graves.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/skeleton_corpses_graves.jpg', 'url': 'images/img/graves/skeleton_corpses_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/sword_graves.jpg', 'url': 'images/img/graves/sword_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thaum_sword_graves.jpg', 'url': 'images/img/graves/thaum_sword_graves.jpg', 'caption': ''}
+                    {'thumbUrl': 'images/img/graves/thumb/creeper_graves.png', 'url': 'images/img/graves/creeper_graves.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/skeleton_corpses_graves.jpg', 'url': 'images/img/graves/skeleton_corpses_graves.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/sword_graves.jpg', 'url': 'images/img/graves/sword_graves.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/thaum_sword_graves.jpg', 'url': 'images/img/graves/thaum_sword_graves.jpg', 'caption': ''}
                 ];
             $scope.about.otherEntitiesGravesImg = [
-                    {'thumbUrl': 'images/img/graves/villager_graves.png', 'url': 'images/img/graves/villager_graves.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/dog_graves.jpg', 'url': 'images/img/graves/dog_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/cat_graves.jpg', 'url': 'images/img/graves/cat_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/horse_graves.jpg', 'url': 'images/img/graves/horse_graves.jpg', 'caption': ''}
+                    {'thumbUrl': 'images/img/graves/thumb/villager_graves.png', 'url': 'images/img/graves/villager_graves.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/dog_graves.jpg', 'url': 'images/img/graves/dog_graves.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/cat_graves.jpg', 'url': 'images/img/graves/cat_graves.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/horse_graves.jpg', 'url': 'images/img/graves/horse_graves.jpg', 'caption': ''}
                 ];
             $scope.about.gravesEffectsImg = [
-                    {'thumbUrl': 'images/img/graves/flowers.png', 'url': 'images/img/graves/flowers.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/mossy_graves.jpg', 'url': 'images/img/graves/mossy_graves.jpg', 'caption': ''}
+                    {'thumbUrl': 'images/img/graves/thumb/flowers.png', 'url': 'images/img/graves/flowers.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/mossy_graves.jpg', 'url': 'images/img/graves/mossy_graves.jpg', 'caption': ''}
                 ];
         });
 
