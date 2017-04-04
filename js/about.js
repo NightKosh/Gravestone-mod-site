@@ -123,6 +123,7 @@ app.controller("AboutMemorialCtrl", ['$scope', '$http', 'Lightbox', 'PageService
             };
             $scope.about.player = {
                 img : [
+                    {'thumbUrl': 'images/img/memorials/thumb/player_1.png', 'url': 'images/img/memorials/player_1.png', 'caption': ''},
                     {'thumbUrl': 'images/img/memorials/thumb/player.png', 'url': 'images/img/memorials/player.png', 'caption': ''}
                 ],
                 expand : function() {
