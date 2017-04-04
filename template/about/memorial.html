@@ -15,6 +15,17 @@
     </div>
 
     <p>{{about.line4}}</p>
+    <p class="code">{{about.line5}}</p>
+    <div class="gallery" ng-class="about.player.galleryClass">
+        <ul>
+            <li ng-repeat="image in about.player.img">
+                <a ng-click="openLightboxModal(about.player.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
+            </li>
+        </ul>
+        <span ng-click="about.player.expand()" ng-show="about.player.img.length > 5"></span>
+    </div>
+
+    <p>{{about.line6}}</p>
     <div class="gallery" ng-class="about.mossy.galleryClass">
         <ul>
             <li ng-repeat="image in about.mossy.img">
@@ -23,5 +34,6 @@
         </ul>
         <span ng-click="about.mossy.expand()" ng-show="about.mossy.img.length > 5"></span>
     </div>
-    <p>{{about.line5}}</p>
+
+    <p>{{about.line7}}</p>
 </div>

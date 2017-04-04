@@ -112,15 +112,27 @@ app.controller("AboutMemorialCtrl", ['$scope', '$http', 'Lightbox', 'PageService
                     {'thumbUrl': 'images/img/memorials/thumb/creeper_1.png', 'url': 'images/img/memorials/creeper_1.png', 'caption': ''},
                     {'thumbUrl': 'images/img/memorials/thumb/creeper_2.png', 'url': 'images/img/memorials/creeper_2.png', 'caption': ''},
                     {'thumbUrl': 'images/img/memorials/thumb/creeper_3.png', 'url': 'images/img/memorials/creeper_3.png', 'caption': ''}
-                    ],
-                    expand : function() {
-                        if (this.galleryClass == "expanded") {
-                            this.galleryClass = "";
-                        } else {
-                            this.galleryClass = "expanded";
-                        }
+                ],
+                expand : function() {
+                    if (this.galleryClass == "expanded") {
+                        this.galleryClass = "";
+                    } else {
+                        this.galleryClass = "expanded";
                     }
-                };
+                }
+            };
+            $scope.about.player = {
+                img : [
+                    {'thumbUrl': 'images/img/memorials/thumb/player.png', 'url': 'images/img/memorials/player.png', 'caption': ''}
+                ],
+                expand : function() {
+                    if (this.galleryClass == "expanded") {
+                        this.galleryClass = "";
+                    } else {
+                        this.galleryClass = "expanded";
+                    }
+                }
+            };
             $scope.about.mossy = {
                 img : [
                     {'thumbUrl': 'images/img/memorials/thumb/mossy_1.png', 'url': 'images/img/memorials/mossy_1.png', 'caption': ''},
