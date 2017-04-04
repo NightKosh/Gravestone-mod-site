@@ -56,7 +56,8 @@ app.controller("AboutCtrl", ['$scope', '$http', 'Lightbox', 'PageService', funct
             $scope.about.gravesEffects = {
                 img : [
                     {'thumbUrl': 'images/img/graves/thumb/flowers.png', 'url': 'images/img/graves/flowers.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/mossy_graves.jpg', 'url': 'images/img/graves/mossy_graves.jpg', 'caption': ''}
+                    {'thumbUrl': 'images/img/graves/thumb/mossy_graves.jpg', 'url': 'images/img/graves/mossy_graves.jpg', 'caption': ''},
+                    {'thumbUrl': 'images/img/graves/thumb/enchanted.png', 'url': 'images/img/graves/enchanted.png', 'caption': ''}
                 ],
                 expand : function() {
                     if (this.galleryClass == "expanded") {
