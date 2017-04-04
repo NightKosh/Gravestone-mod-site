@@ -181,6 +181,7 @@ app.controller("AboutStructuresCtrl", ['$scope', '$http', 'Lightbox', 'PageServi
                 img : [
                     {'thumbUrl': 'images/img/structures/village/thumb/cemetery_1.png', 'url': 'images/img/structures/village/cemetery_1.png', 'caption': ''},
                     {'thumbUrl': 'images/img/structures/village/thumb/cemetery_2.png', 'url': 'images/img/structures/village/cemetery_2.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/structures/village/thumb/cemetery_3.png', 'url': 'images/img/structures/village/cemetery_3.png', 'caption': ''},
                     {'thumbUrl': 'images/img/structures/village/thumb/undertaker_1.png', 'url': 'images/img/structures/village/undertaker_1.png', 'caption': ''},
                     {'thumbUrl': 'images/img/structures/village/thumb/undertaker_2.png', 'url': 'images/img/structures/village/undertaker_2.png', 'caption': ''},
                     {'thumbUrl': 'images/img/structures/village/thumb/undertaker_3.png', 'url': 'images/img/structures/village/undertaker_3.png', 'caption': ''},
