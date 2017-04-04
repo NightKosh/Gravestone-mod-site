@@ -157,6 +157,64 @@ app.controller("AboutMemorialCtrl", ['$scope', '$http', 'Lightbox', 'PageService
     }
 }]);
 
+app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "spawner") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+
+            $scope.about.spawners = {
+                img : [
+                    {'thumbUrl': 'images/img/spawners/thumb/spawner_1.png', 'url': 'images/img/spawners/spawner_1.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/thumb/spawner_2.png', 'url': 'images/img/spawners/spawner_2.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/thumb/spawner_3.png', 'url': 'images/img/spawners/spawner_3.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/thumb/spawner_4.png', 'url': 'images/img/spawners/spawner_4.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/thumb/spawner_5.png', 'url': 'images/img/spawners/spawner_5.png', 'caption': ''}
+                ],
+                expand : function() {
+                    if (this.galleryClass == "expanded") {
+                        this.galleryClass = "";
+                    } else {
+                        this.galleryClass = "expanded";
+                    }
+                }
+            };
+            $scope.about.boss = {
+                img : [
+                    {'thumbUrl': 'images/img/spawners/thumb/boss_1.png', 'url': 'images/img/spawners/boss_1.png', 'caption': ''}
+                ],
+                expand : function() {
+                    if (this.galleryClass == "expanded") {
+                        this.galleryClass = "";
+                    } else {
+                        this.galleryClass = "expanded";
+                    }
+                }
+            };
+            $scope.about.recipes = {
+                img : [
+                    {'thumbUrl': 'images/img/spawners/recipes/skeleton.png', 'url': 'images/img/spawners/recipes/skeleton.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/recipes/zombie.png', 'url': 'images/img/spawners/recipes/zombie.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/recipes/spider.png', 'url': 'images/img/spawners/recipes/spider.png', 'caption': ''},
+                    {'thumbUrl': 'images/img/spawners/recipes/wither.png', 'url': 'images/img/spawners/recipes/wither.png', 'caption': ''},
+                ],
+                expand : function() {
+                    if (this.galleryClass == "expanded") {
+                        this.galleryClass = "";
+                    } else {
+                        this.galleryClass = "expanded";
+                    }
+                }
+            };
+        });
+
+        $scope.openLightboxModal = function (images, index) {
+            Lightbox.openModal(images, index);
+        };
+    }
+}]);
+
 app.controller("AboutStructuresCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
     $scope.about = {};
 
