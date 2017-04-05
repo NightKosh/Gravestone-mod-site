@@ -1,7 +1,7 @@
 {
     "title" : "Спаунеры",
-    "line1" : "As you may understand, main purpose of this blocks - spawn of monsters. It it rather similar to minecraft spawners except its visual appearance and some changes in logic.",
-    "line2" : "There are few types of spawners: skeleton spawner, zombie spawner and spider spawners. Each of them can spawn only appropriate to its type mobs, but those monsters can be different - skeleton spawner can spawn ordinary skeletons, wither skeletons, skeleton cats, dogs and horses. Zombie spawner can spawn zombies, zombie villagers, zombie pigmen, zombie cats, dogs and horses. Spider spawner can spawn spiders and cave spiders.",
-    "line3" : "There are special types of spawners - boss spawners. This spawners can be used once - it will be destroyed at boss spawners. At the moment there is only one boss spawner - Wither spawner, it can be used to summon Wither boss.",
-    "line4" : "All spawners can be crafted, but you can change it in configuration file - set \"CraftableSpawners\" and \"CraftableWitherSpawner\"(for wither spawner) to \"false\" to disable its crafting recipes"
+    "line1" : "Как вы уже могли догадаться по названию, основная задача этих блоков - спавн монстров. Они достаточно схожи со майнкрафтовыми смаунерами за исключением внешнего вида и небольших отличий в их работе.",
+    "line2" : "Есть несколько типов спаунеров: спаунеры скелетов, спаунеры зомби и спаунеры пауков. Каждый из них может призывать монстров такого же типа как и спаунер, но, при этом монстры могут быть различными - спаунер скелетов может призывать обычных скелетов, скелетов-иссушителей, скелетов-котов, скелетов-собак и скелетов-лошадей. Спаунер зомби может призывать обычных зомби, зомби-жителей, свино-зомби, зомби-котов, зомби-собак и зомби-лошадей. Спаунер пауков может призывать как обычных пауков так и пещерных пауков.",
+    "line3" : "Так же, есть отдельный типа спаунеров - спаунер боссов. Такие спаунеры могут быть использованны лишь однажды - при призыве монстра спаунер разрушается. На данный момент существует лишь один такой спаунер - спаунер Иссушителя.",
+    "line4" : "Все спаунеры могут быть скрафчены, но вы можете изменить это в настройках. Что бы это сделать выставите \"CraftableSpawners\" и \"CraftableWitherSpawner\"(для спаунера Иссушителя) в \"false\"."
 }
