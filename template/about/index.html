@@ -4,50 +4,17 @@
     <p>{{about.line1}}</p>
 
     <p>{{about.line2}}</p>
-
-    <div class="gallery" ng-class="about.playerGraves.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.playerGraves.img">
-                <a ng-click="openLightboxModal(about.playerGraves.img, $index)"
-                   style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.playerGraves.expand()" ng-show="about.playerGraves.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.playerGraves"></nk-gallery>
 
     <p>{{about.line3}}</p>
-    <div class="gallery" ng-class="about.specialGraves.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.specialGraves.img">
-                <a ng-click="openLightboxModal(about.specialGraves.img, $index)"
-                   style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.specialGraves.expand()" ng-show="about.specialGraves.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.specialGraves"></nk-gallery>
 
     <p>{{about.line4}}</p>
-    <div class="gallery" ng-class="about.otherEntities.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.otherEntities.img">
-                <a ng-click="openLightboxModal(about.otherEntities.img, $index)"
-                    style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.otherEntities.expand()" ng-show="about.otherEntities.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.otherEntities"></nk-gallery>
 
     <p>{{about.line5}}</p>
     <p>{{about.line6}}</p>
-    <div class="gallery" ng-class="about.gravesEffects.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.gravesEffects.img">
-                <a ng-click="openLightboxModal(about.gravesEffects.img, $index)"
-                   style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.gravesEffects.expand()" ng-show="about.gravesEffects.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.gravesEffects"></nk-gallery>
 
     <p>{{about.line7}}</p>
     <p>{{about.line8}}</p>

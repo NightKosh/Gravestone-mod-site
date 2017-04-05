@@ -5,35 +5,14 @@
 
     <p>{{about.line2}}</p>
     <p>{{about.line3}}</p>
-    <div class="gallery" ng-class="about.memorials.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.memorials.img">
-                <a ng-click="openLightboxModal(about.memorials.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.memorials.expand()" ng-show="about.memorials.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.memorials"></nk-gallery>
 
     <p>{{about.line4}}</p>
     <p class="code">{{about.line5}}</p>
-    <div class="gallery" ng-class="about.player.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.player.img">
-                <a ng-click="openLightboxModal(about.player.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.player.expand()" ng-show="about.player.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.player"></nk-gallery>
 
     <p>{{about.line6}}</p>
-    <div class="gallery" ng-class="about.mossy.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.mossy.img">
-                <a ng-click="openLightboxModal(about.mossy.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.mossy.expand()" ng-show="about.mossy.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.mossy"></nk-gallery>
 
     <p>{{about.line7}}</p>
 </div>

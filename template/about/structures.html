@@ -2,35 +2,14 @@
     <h2>{{globalData.menu_about}} - {{about.title}}</h2>
 
     <p>{{about.line1}}</p>
-    <div class="gallery" ng-class="about.structures.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.structures.img">
-                <a ng-click="openLightboxModal(about.structures.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.structures.expand()" ng-show="about.structures.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.structures"></nk-gallery>
 
     <p>{{about.line2}}</p>
-    <div class="gallery" ng-class="about.village.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.village.img">
-                <a ng-click="openLightboxModal(about.village.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.village.expand()" ng-show="about.village.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.village"></nk-gallery>
 
     <p>{{about.line3}}</p>
     <p>{{about.line4}}</p>
-    <div class="gallery" ng-class="about.catacombs.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.catacombs.img">
-                <a ng-click="openLightboxModal(about.catacombs.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.catacombs.expand()" ng-show="about.catacombs.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.catacombs"></nk-gallery>
 
     <p>{{about.line5}}</p>
     <p class="code">{{about.line6}}</p>

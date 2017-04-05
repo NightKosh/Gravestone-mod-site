@@ -1,6 +1,6 @@
 
 
-app.controller("AboutCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
+app.controller("AboutCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
     if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == null) {
@@ -8,74 +8,38 @@ app.controller("AboutCtrl", ['$scope', '$http', 'Lightbox', 'PageService', funct
             $scope.about = data;
 
             $scope.about.playerGraves = {
-                img : [
-                    {'thumbUrl': 'images/img/graves/thumb/vertical_plates.jpg', 'url': 'images/img/graves/vertical_plates.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/crosses.jpg', 'url': 'images/img/graves/crosses.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/horizontal_plates.jpg', 'url': 'images/img/graves/horizontal_plates.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/celtic_crosses.png', 'url': 'images/img/graves/celtic_crosses.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/obelisks.png', 'url': 'images/img/graves/obelisks.png', 'caption': ''}
+                images : [
+                    'vertical_plates.jpg', 'crosses.jpg', 'horizontal_plates.jpg', 'celtic_crosses.png', 'obelisks.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/graves/',
+                thumb : true
             };
             $scope.about.specialGraves = {
-                img : [
-                    {'thumbUrl': 'images/img/graves/thumb/creeper_graves.png', 'url': 'images/img/graves/creeper_graves.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/skeleton_corpses_graves.jpg', 'url': 'images/img/graves/skeleton_corpses_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/sword_graves.jpg', 'url': 'images/img/graves/sword_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/thaum_sword_graves.jpg', 'url': 'images/img/graves/thaum_sword_graves.jpg', 'caption': ''}
+                images : [
+                    'creeper_graves.png', 'skeleton_corpses_graves.jpg', 'sword_graves.jpg', 'thaum_sword_graves.jpg'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/graves/',
+                thumb : true
             };
             $scope.about.otherEntities = {
-                img : [
-                    {'thumbUrl': 'images/img/graves/thumb/villager_graves.png', 'url': 'images/img/graves/villager_graves.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/dog_graves.jpg', 'url': 'images/img/graves/dog_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/cat_graves.jpg', 'url': 'images/img/graves/cat_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/horse_graves.jpg', 'url': 'images/img/graves/horse_graves.jpg', 'caption': ''}
+                images : [
+                    'villager_graves.png', 'dog_graves.jpg', 'cat_graves.jpg', 'horse_graves.jpg'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/graves/',
+                thumb : true
             };
             $scope.about.gravesEffects = {
-                img : [
-                    {'thumbUrl': 'images/img/graves/thumb/flowers.png', 'url': 'images/img/graves/flowers.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/mossy_graves.jpg', 'url': 'images/img/graves/mossy_graves.jpg', 'caption': ''},
-                    {'thumbUrl': 'images/img/graves/thumb/enchanted.png', 'url': 'images/img/graves/enchanted.png', 'caption': ''}
+                images : [
+                    'flowers.png', 'mossy_graves.jpg', 'enchanted.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/graves/',
+                thumb : true
             };
         });
-
-        $scope.openLightboxModal = function (images, index) {
-            Lightbox.openModal(images, index);
-        };
     }
 }]);
 
-app.controller("AboutMemorialCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
+app.controller("AboutMemorialCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
     if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "memorial") {
@@ -83,81 +47,39 @@ app.controller("AboutMemorialCtrl", ['$scope', '$http', 'Lightbox', 'PageService
             $scope.about = data;
 
             $scope.about.memorials = {
-                img : [
-                    {'thumbUrl': 'images/img/memorials/thumb/cross_1.png', 'url': 'images/img/memorials/cross_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cross_2.png', 'url': 'images/img/memorials/cross_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cross_3.png', 'url': 'images/img/memorials/cross_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cross_4.png', 'url': 'images/img/memorials/cross_4.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/obelisk_1.png', 'url': 'images/img/memorials/obelisk_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/obelisk_2.png', 'url': 'images/img/memorials/obelisk_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/obelisk_3.png', 'url': 'images/img/memorials/obelisk_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/obelisk_4.png', 'url': 'images/img/memorials/obelisk_4.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/celtic_1.png', 'url': 'images/img/memorials/celtic_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/celtic_2.png', 'url': 'images/img/memorials/celtic_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/celtic_3.png', 'url': 'images/img/memorials/celtic_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/steve_1.png', 'url': 'images/img/memorials/steve_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/steve_2.png', 'url': 'images/img/memorials/steve_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/steve_3.png', 'url': 'images/img/memorials/steve_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/villagers_1.png', 'url': 'images/img/memorials/villagers_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/villagers_2.png', 'url': 'images/img/memorials/villagers_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/villagers_3.png', 'url': 'images/img/memorials/villagers_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/angel_1.png', 'url': 'images/img/memorials/angel_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/angel_2.png', 'url': 'images/img/memorials/angel_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/angel_3.png', 'url': 'images/img/memorials/angel_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/dog_1.png', 'url': 'images/img/memorials/dog_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/dog_2.png', 'url': 'images/img/memorials/dog_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/dog_3.png', 'url': 'images/img/memorials/dog_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cat_1.png', 'url': 'images/img/memorials/cat_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cat_2.png', 'url': 'images/img/memorials/cat_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/cat_3.png', 'url': 'images/img/memorials/cat_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/creeper_1.png', 'url': 'images/img/memorials/creeper_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/creeper_2.png', 'url': 'images/img/memorials/creeper_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/creeper_3.png', 'url': 'images/img/memorials/creeper_3.png', 'caption': ''}
+                images : [
+                    'cross_1.png', 'cross_2.png', 'cross_3.png', 'cross_4.png',
+                    'obelisk_1.png', 'obelisk_2.png', 'obelisk_3.png', 'obelisk_4.png',
+                    'celtic_1.png', 'celtic_2.png', 'celtic_3.png',
+                    'steve_1.png', 'steve_2.png', 'steve_3.png',
+                    'villagers_1.png', 'villagers_2.png', 'villagers_3.png',
+                    'angel_1.png', 'angel_2.png', 'angel_3.png',
+                    'dog_1.png', 'dog_2.png', 'dog_3.png',
+                    'cat_1.png', 'cat_2.png', 'cat_3.png',
+                    'creeper_1.png', 'creeper_2.png', 'creeper_3.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/memorials/',
+                thumb : true
             };
             $scope.about.player = {
-                img : [
-                    {'thumbUrl': 'images/img/memorials/thumb/player_1.png', 'url': 'images/img/memorials/player_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/player.png', 'url': 'images/img/memorials/player.png', 'caption': ''}
+                images : [
+                    'player_1.png', 'player.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/memorials/',
+                thumb : true
             };
             $scope.about.mossy = {
-                img : [
-                    {'thumbUrl': 'images/img/memorials/thumb/mossy_1.png', 'url': 'images/img/memorials/mossy_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/mossy_2.png', 'url': 'images/img/memorials/mossy_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/memorials/thumb/mossy_3.png', 'url': 'images/img/memorials/mossy_3.png', 'caption': ''}
+                images : [
+                    'mossy_1.png', 'mossy_2.png', 'mossy_3.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/memorials/',
+                thumb : true
             };
         });
-
-        $scope.openLightboxModal = function (images, index) {
-            Lightbox.openModal(images, index);
-        };
     }
 }]);
 
-app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
+app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
     if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "spawner") {
@@ -165,57 +87,31 @@ app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'Lightbox', 'PageService'
             $scope.about = data;
 
             $scope.about.spawners = {
-                img : [
-                    {'thumbUrl': 'images/img/spawners/thumb/spawner_1.png', 'url': 'images/img/spawners/spawner_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/thumb/spawner_2.png', 'url': 'images/img/spawners/spawner_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/thumb/spawner_3.png', 'url': 'images/img/spawners/spawner_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/thumb/spawner_4.png', 'url': 'images/img/spawners/spawner_4.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/thumb/spawner_5.png', 'url': 'images/img/spawners/spawner_5.png', 'caption': ''}
+                images : [
+                    'spawner_1.png', 'spawner_2.png', 'spawner_3.png', 'spawner_4.png', 'spawner_5.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/spawners/',
+                thumb : true
             };
             $scope.about.boss = {
-                img : [
-                    {'thumbUrl': 'images/img/spawners/thumb/boss_1.png', 'url': 'images/img/spawners/boss_1.png', 'caption': ''}
+                images : [
+                    'boss_1.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/spawners/',
+                thumb : true
             };
             $scope.about.recipes = {
-                img : [
-                    {'thumbUrl': 'images/img/spawners/recipes/skeleton.png', 'url': 'images/img/spawners/recipes/skeleton.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/recipes/zombie.png', 'url': 'images/img/spawners/recipes/zombie.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/recipes/spider.png', 'url': 'images/img/spawners/recipes/spider.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/spawners/recipes/wither.png', 'url': 'images/img/spawners/recipes/wither.png', 'caption': ''},
+                images : [
+                    'skeleton.png', 'zombie.png', 'spider.png', 'wither.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/spawners/recipes/',
+                thumb : false
             };
         });
-
-        $scope.openLightboxModal = function (images, index) {
-            Lightbox.openModal(images, index);
-        };
     }
 }]);
 
-app.controller("AboutStructuresCtrl", ['$scope', '$http', 'Lightbox', 'PageService', function($scope, $http, Lightbox, PageService) {
+app.controller("AboutStructuresCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
     if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "structures") {
@@ -223,83 +119,30 @@ app.controller("AboutStructuresCtrl", ['$scope', '$http', 'Lightbox', 'PageServi
             $scope.about = data;
 
             $scope.about.structures = {
-                img : [
-                    {'thumbUrl': 'images/img/structures/thumb/grave.png', 'url': 'images/img/structures/grave.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/thumb/opened_grave.png', 'url': 'images/img/structures/opened_grave.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/thumb/memorial.png', 'url': 'images/img/structures/memorial.png', 'caption': ''}
+                images : [
+                    'grave.png', 'opened_grave.png', 'memorial.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/structures/',
+                thumb : true
             };
             $scope.about.village = {
-                img : [
-                    {'thumbUrl': 'images/img/structures/village/thumb/cemetery_1.png', 'url': 'images/img/structures/village/cemetery_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/cemetery_2.png', 'url': 'images/img/structures/village/cemetery_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/cemetery_3.png', 'url': 'images/img/structures/village/cemetery_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_1.png', 'url': 'images/img/structures/village/undertaker_1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_2.png', 'url': 'images/img/structures/village/undertaker_2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_3.png', 'url': 'images/img/structures/village/undertaker_3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_4.png', 'url': 'images/img/structures/village/undertaker_4.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_5.png', 'url': 'images/img/structures/village/undertaker_5.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_6.png', 'url': 'images/img/structures/village/undertaker_6.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/village/thumb/undertaker_7.png', 'url': 'images/img/structures/village/undertaker_7.png', 'caption': ''}
+                images : [
+                    'cemetery_1.png', 'cemetery_2.png', 'cemetery_3.png', 'undertaker_1.png', 'undertaker_2.png',
+                    'undertaker_3.png', 'undertaker_4.png', 'undertaker_5.png', 'undertaker_6.png', 'undertaker_7.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/structures/village/',
+                thumb : true
             };
             $scope.about.catacombs = {
-                img : [
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/1.png', 'url': 'images/img/structures/catacombs/1.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/2.png', 'url': 'images/img/structures/catacombs/2.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/3.png', 'url': 'images/img/structures/catacombs/3.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/4.png', 'url': 'images/img/structures/catacombs/4.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/5.png', 'url': 'images/img/structures/catacombs/5.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/6.png', 'url': 'images/img/structures/catacombs/6.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/7.png', 'url': 'images/img/structures/catacombs/7.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/8.png', 'url': 'images/img/structures/catacombs/8.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/9.png', 'url': 'images/img/structures/catacombs/9.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/10.png', 'url': 'images/img/structures/catacombs/10.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/11.png', 'url': 'images/img/structures/catacombs/11.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/12.png', 'url': 'images/img/structures/catacombs/12.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/13.png', 'url': 'images/img/structures/catacombs/13.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/14.png', 'url': 'images/img/structures/catacombs/14.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/15.png', 'url': 'images/img/structures/catacombs/15.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/16.png', 'url': 'images/img/structures/catacombs/16.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/17.png', 'url': 'images/img/structures/catacombs/17.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/18.png', 'url': 'images/img/structures/catacombs/18.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/19.png', 'url': 'images/img/structures/catacombs/19.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/20.png', 'url': 'images/img/structures/catacombs/20.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/21.png', 'url': 'images/img/structures/catacombs/21.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/22.png', 'url': 'images/img/structures/catacombs/22.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/23.png', 'url': 'images/img/structures/catacombs/23.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/24.png', 'url': 'images/img/structures/catacombs/24.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/25.png', 'url': 'images/img/structures/catacombs/25.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/26.png', 'url': 'images/img/structures/catacombs/26.png', 'caption': ''},
-                    {'thumbUrl': 'images/img/structures/catacombs/thumb/27.png', 'url': 'images/img/structures/catacombs/27.png', 'caption': ''}
+                images : [
+                    '1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png',
+                    '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png',
+                    '21.png', '22.png', '23.png', '24.png', '25.png', '26.png', '27.png'
                 ],
-                expand : function() {
-                    if (this.galleryClass == "expanded") {
-                        this.galleryClass = "";
-                    } else {
-                        this.galleryClass = "expanded";
-                    }
-                }
+                path : 'images/img/structures/catacombs/',
+                thumb : true
             };
         });
-
-        $scope.openLightboxModal = function (images, index) {
-            Lightbox.openModal(images, index);
-        };
     }
 }]);
 
@@ -309,7 +152,6 @@ app.controller("AboutMenuCtrl", ['$scope', '$http', 'PageService', function($sco
     if (PageService.getPageParams().page == "about") {
         $http.get(PageService.getSubMenuDataPath()).success(function (data, status, headers, config) {
             $scope.aboutMenu = data;
-
 
             $scope.aboutMenu.link_gravestone = PageService.getLinkWithLangParams("?page=about");
             $scope.aboutMenu.link_memorial = PageService.getLinkWithLangParams("?page=about&sub_page=memorial");
@@ -327,7 +169,3 @@ app.controller("AboutMenuCtrl", ['$scope', '$http', 'PageService', function($sco
         });
     }
 }]);
-
-app.config(function (LightboxProvider) {
-    LightboxProvider.templateUrl = 'template/libs/lightbox.html';
-});

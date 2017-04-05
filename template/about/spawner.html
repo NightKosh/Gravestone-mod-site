@@ -3,32 +3,11 @@
 
     <p>{{about.line1}}</p>
     <p>{{about.line2}}</p>
-    <div class="gallery" ng-class="about.spawners.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.spawners.img">
-                <a ng-click="openLightboxModal(about.spawners.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.spawners.expand()" ng-show="about.spawners.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.spawners"></nk-gallery>
 
     <p>{{about.line3}}</p>
-    <div class="gallery" ng-class="about.boss.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.boss.img">
-                <a ng-click="openLightboxModal(about.boss.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.boss.expand()" ng-show="about.boss.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.boss"></nk-gallery>
 
     <p>{{about.line4}}</p>
-    <div class="gallery" ng-class="about.recipes.galleryClass">
-        <ul>
-            <li ng-repeat="image in about.recipes.img">
-                <a ng-click="openLightboxModal(about.recipes.img, $index)" style="background-image: url('{{image.thumbUrl}}');"></a>
-            </li>
-        </ul>
-        <span ng-click="about.recipes.expand()" ng-show="about.recipes.img.length > 5"></span>
-    </div>
+    <nk-gallery data="about.recipes"></nk-gallery>
 </div>
