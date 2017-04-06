@@ -62,13 +62,13 @@ app.service('PageService', function () {
             ((pageParams.page) ? pageParams.page : DEFAULT_PARAMS.page) +
             "/" +
             ((pageParams.sub_page) ? pageParams.sub_page : "index") +
-            ".html";
+            ".html?v=" + version;
     };
 
     this.getSubMenuTemplatePath = function () {
         return "template/" +
             ((pageParams.page) ? pageParams.page : DEFAULT_PARAMS.page) +
-            "/submenu.html";
+            "/submenu.html?v=" + version;
     };
 
     this.getDataPath = function () {
@@ -76,13 +76,13 @@ app.service('PageService', function () {
             ((pageParams.page) ? pageParams.page : DEFAULT_PARAMS.page) +
             "/" +
             ((pageParams.sub_page) ? pageParams.sub_page + "_" : "") +
-            pageParams.lang + ".json";
+            pageParams.lang + ".json?v=" + version;
     };
 
     this.getSubMenuDataPath = function () {
         return "data/" +
             ((pageParams.page) ? pageParams.page : DEFAULT_PARAMS.page) +
-            "/submenu_" + pageParams.lang + ".json";
+            "/submenu_" + pageParams.lang + ".json?v=" + version;
     };
 });
 app.config(function (LightboxProvider) {
