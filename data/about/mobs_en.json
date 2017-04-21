@@ -1,0 +1,29 @@
+{
+    "title" : "Mobs",
+    "pets" : {
+	    "title" : "Undead pets.",
+	    "line1" : "There are several types of mobs added by this mod. Firstly it are undead pets - zombie and skeleton cats, dogs and horses. This mobs are hostile and will attack any players which come close enought to them. Furthermore zombie pets, like ordinary zombie will attack villagers, wolves, cats and horses, which will be transformed into zombies at death.",
+	    "line2" : "Zombie cats and dogs stronger then its lived forms. At the same time skeleton cats and dogs almost twice faster but have only half heath of its lived forms.",
+	    "line3" : "As for undead horses - unlike minecraft undead horses this horses, like any another undead mobs hostile, burn under the sun light and can wear armor.",
+	    "line4" : "All undead pets can be naturally spawned in the world at night or in dark places in the same biomes as its lived forms. Furthermore it can be spawned by proper types of graves and spawners."
+    },
+    "crawlers" : {    
+	    "title" : "Skull Crawlers.",
+	    "line1" : "Skull Crawlers are small spider like undead creatures. Its behavior similar to spiders and silverfishes. It can climb over walls like spiders, hide in a bone blocks and as a piles of bones and summon another skull crawlers from nearest bone blocks.",
+	    "line2" : "There are 3 types of skull crawlers: Zombie Skull Crawlers, Skeleton Skull Crawlers and Wither Skull Crawlers. Each of them apply own type of negative potion effect at attack: Skeleton Skull Crawlers - slowness, Zombie Skull Crawlers - hunger, Wither Skull Crawlers - wither.",
+	    "line3" : "This mobs can't be naturally spawned in the world like another creatures(except Wither Skull Crawlers - it can be spawned in nether) but every time you kill a skeleton, zombie or wither skeleton, there is a 10% chace to spawn proper type of Skull Crawler.",
+	    "line4" : "At death this mobs drop bones/rotten flesh and its skull(as a rare drop)."
+    },
+    "skeletons" : {
+    	"title" : "Skeletons",
+    	"line1" : "This skeletons are almost the same skeletons as vanilla one. The main difference between them is its skull shape, and available weapon - it can be spawned with a bow or with stone sword. This skeletons can be rarely spawned in the world, but more common way to be spawned for them - graves and spawners."
+    },
+    "raiders" : {
+    	"title" : "Zombie and Skeleton Raiders",
+    	"line1" : "Technically this are just a zombies/skeletons, which ride an undead horses. Zombie Raider spawns with a sword in hand on a Zombie horses. Skeleton Raider spawns with bow in hand on a Skeleton horse. For sure its horses are hostile, and will try to kill you even if its rider was killed."
+    },
+    "villagers" : {
+    	"title" : "Villagers - Undertaker",
+    	"line1" : "As you may know this mod adds additional house to the villages - undertaker house, which have an own villager - undertaker. This villager can sell you a chisel, candles and any type of skull."
+    }
+}

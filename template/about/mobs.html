@@ -1,0 +1,30 @@
+<div ng-controller="AboutMobsCtrl">
+    <h2>{{globalData.menu_about}} - {{about.title}}</h2>
+
+    <h3>{{about.pets.title}}</h3>
+    <p>{{about.pets.line1}}</p>
+    <p>{{about.pets.line2}}</p>
+    <nk-gallery data="about.pets.pets"></nk-gallery>
+    <p>{{about.pets.line3}}</p>
+    <nk-gallery data="about.pets.horses"></nk-gallery>
+    <p>{{about.pets.line4}}</p>
+        
+    <h3>{{about.crawlers.title}}</h3>
+    <p>{{about.crawlers.line1}}</p>
+    <p>{{about.crawlers.line2}}</p>
+    <p>{{about.crawlers.line3}}</p>
+    <p>{{about.crawlers.line4}}</p>
+    <nk-gallery data="about.crawlers.img"></nk-gallery>
+        
+    <h3>{{about.skeletons.title}}</h3>
+    <p>{{about.skeletons.line1}}</p>
+    <nk-gallery data="about.skeletons.img"></nk-gallery>
+        
+    <h3>{{about.raiders.title}}</h3>
+    <p>{{about.raiders.line1}}</p>
+    <nk-gallery data="about.raiders.img"></nk-gallery>
+        
+    <h3>{{about.villagers.title}}</h3>
+    <p>{{about.villagers.line1}}</p>
+    <nk-gallery data="about.villagers.img"></nk-gallery>
+</div>

@@ -111,6 +111,60 @@ app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'PageService', function($
     }
 }]);
 
+app.controller("AboutMobsCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "mobs") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+
+            $scope.about.pets.pets = {
+                images : [
+                    "zombie_dog_1.png", "zombie_dog_2.png", "zombie_cat.png",
+                    "skeleton_dog.png", "skeleton_cat.png"
+                ],
+                path : 'images/img/mobs/pets/',
+                thumb : true
+            };
+            $scope.about.pets.horses = {
+                images : [
+                    "horses.png", "tamed.png"
+                ],
+                path : 'images/img/mobs/horses/',
+                thumb : true
+            };
+            $scope.about.crawlers.img = {
+                images : [
+                    "1.png", "2.png"
+                ],
+                path : 'images/img/mobs/crawlers/',
+                thumb : true
+            };            
+            $scope.about.skeletons.img = {
+            	images : [
+                    "skeletons.png"
+                ],
+                path : 'images/img/mobs/skeletons/',
+                thumb : true
+            };
+            $scope.about.raiders.img = {
+                images : [
+                    "raiders.png"
+                ],
+                path : 'images/img/mobs/raiders/',
+                thumb : true
+            };
+            $scope.about.villagers.img = {
+                images : [
+                    "undertaker.png", "trades.png"
+                ],
+                path : 'images/img/mobs/villagers/',
+                thumb : true
+            };
+        });
+    }
+}]);
+
 app.controller("AboutStructuresCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
