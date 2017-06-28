@@ -1,0 +1,26 @@
+{
+    "title" : "Commands",
+	"line1" : "There are several console commands, provided by this mod. The main purpose of them - to improve and simplify mod testing and new features development. Anyway it can be useful for some players, and servers owners.",
+	"line2" : "To prevent compatibility problems with another mods all commands shares general prefix:",
+	"line3" : "To make it more handy there are shorthand and low cased versions of it:",
+    "graves" : {
+	    "title" : "Graves module",
+		"line1" : "This command prints all available commands provided by both mods - \"Graves\" and \"Extended\"(if it installed).",
+		"line2" : "This command could be used to fill grave by items from any chest. As a mandatory params it takes graves coordinates and chest coordinates."
+    },
+    "extended" : {
+	    "title" : "Extended module",
+		"line1" : "This command could be used to get player's statue. It takes player name as a mandatory param, and statues material as optional param(otherwise it will be made of stone).",
+		"line2" : "This command could be used to get player's corpse. It takes player name as a mandatory param.",
+		"line3" : "This command could be used to generate any structure which added by this mod. It takes structure type as a mandatory param:",
+		"line3_catacombs" : "for catacombs",
+		"line3_memorial" : "for memorial",
+		"line3_grave" : "for grave",
+		"line3_opened_grave" : "for opened grave",
+		"line3_cemetery" : "for village cemetery",
+		"line3_undertaker" : "for undertaker house",
+		"line4" : "Also it takes coordinates and direction as optional params(in case you skip it - it will takes your coordinates and direction).",
+		"line5" : "This command could be used to generate catacombs parts separately. By default it is not available for usage, but if you'd like to use it - set \"DebugMode\" to \"true\" in mod's configuration file.",
+		"line6" : "As in previous command, component type - is mandatory param, other params are optional and can be skipped."
+    }
+}
