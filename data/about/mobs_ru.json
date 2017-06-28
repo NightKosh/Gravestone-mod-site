@@ -1,29 +1,29 @@
 {
-    "title" : "Mobs",
+    "title" : "Мобы",
     "pets" : {
-	    "title" : "Undead pets.",
-	    "line1" : "There are several types of mobs added by this mod. Firstly it are undead pets - zombie and skeleton cats, dogs and horses. This mobs are hostile and will attack any players which come close enought to them. Furthermore zombie pets, like ordinary zombie will attack villagers, wolves, cats and horses, which will be transformed into zombies at death.",
-	    "line2" : "Zombie cats and dogs stronger then its lived forms. At the same time skeleton cats and dogs almost twice faster but have only half heath of its lived forms.",
-	    "line3" : "As for undead horses - unlike minecraft undead horses this horses, like any another undead mobs hostile, burn under the sun light and can wear armor.",
-	    "line4" : "All undead pets can be naturally spawned in the world at night or in dark places in the same biomes as its lived forms. Furthermore it can be spawned by proper types of graves and spawners."
+	    "title" : "Животные - нежить.",
+	    "line1" : "Этот мод добавляет несколько типов мобов. В первую очередь это зомби, кадавры и скелеты коты, собаки и лошади. Естественно, как и прочая нежить, эти \"питомцы\" опасны для игрока и не упустят возможности напасть на вас, если подойти к ним слишком близко. Более того, зомби-питомцы, как и обычные зомби, нападают на жителей, а так же волков, котов и лошадей, превращая их в нежить.",
+	    "line2" : "Зомби коты и собаки гораздо сильней, чем были при жизни. В то же время скелеты коты и собаки почти что в два раза быстрей, но при этом, имеют лишь половину здоровья.",
+	    "line3" : "Что касаемо коней-нежити - в отличии от коней-нежити майнкрафта эти кони, как и любая другая нежить, опасны для игрока и жителей. Более того, они так же сгорают под солнечным светом, что свойственно любой нежити. Естественно, при наличии надетой брони, солнечный свет им будет не страшен.",
+	    "line4" : "Как и любая другая нежить - они спаунятся по ночам и в тёмных уголках вашего мира, в тех же самых биомах, что и их живые разновидности. Более того, они могут быть заспаунены соответствующими им типами могил и спаунеров."
     },
     "crawlers" : {    
-	    "title" : "Skull Crawlers.",
-	    "line1" : "Skull Crawlers are small spider like undead creatures. Its behavior similar to spiders and silverfishes. It can climb over walls like spiders, hide in a bone blocks and as a piles of bones and summon another skull crawlers from nearest bone blocks.",
-	    "line2" : "There are 3 types of skull crawlers: Zombie Skull Crawlers, Skeleton Skull Crawlers and Wither Skull Crawlers. Each of them apply own type of negative potion effect at attack: Skeleton Skull Crawlers - slowness, Zombie Skull Crawlers - hunger, Wither Skull Crawlers - wither.",
-	    "line3" : "This mobs can't be naturally spawned in the world like another creatures(except Wither Skull Crawlers - it can be spawned in nether) but every time you kill a skeleton, zombie or wither skeleton, there is a 10% chace to spawn proper type of Skull Crawler.",
-	    "line4" : "At death this mobs drop bones/rotten flesh and its skull(as a rare drop)."
+	    "title" : "Ползучие черепа.",
+	    "line1" : "Ползучие черепа - это не большие паукообразные монстры. Их поведение сходно чешуйницам и паукам. Они способны карабкаться по стенам, как пауки, прятаться в костяных блоках и кучах костей, как чешуйницы, а так же призывать себе на помощь других ползучих черепов из находящихся по близосте костяных блоков.",
+	    "line2" : "На данный момент есть 3 разновидности ползучих черепов: Череп зомби, скелета и скелета-иссушителя. Каждый из них накладывает дебаф при атаке: Ползучий череп скелета - медлительность, ползучий черп зомби - голод, ползучий череп скелета-иссушителя - иссушение.",
+	    "line3" : "Эти мобы, за исключением ползучего черепа скелета-иссушителя(он может быть заспаунен в нижнем мире), не спаунятся в мире как все остальные мобы. Вместо этого, какждый раз когда умирает скелет, зомби или скелет иссушитель его череп, с вероятностью в 10%, может отделиться от тела став ползучим черепом.",
+	    "line4" : "При смерти из ползучих черепов дропаются кости или гнилая плоть, а так же, в качестве редкого дропа, может выпасть череп."
     },
     "skeletons" : {
-    	"title" : "Skeletons",
-    	"line1" : "This skeletons are almost the same skeletons as vanilla one. The main difference between them is its skull shape, and available weapon - it can be spawned with a bow or with stone sword. This skeletons can be rarely spawned in the world, but more common way to be spawned for them - graves and spawners."
+    	"title" : "Скелеты",
+    	"line1" : "Скелеты, добавляемые этим модом, практически идентичны обычным скелетам. Их отличия лишь в форме черепа и доступном им оружии - они могут заспауниться как с луком, так и с каменным мечом. Они достаточно редко спаунятся, так что встретить их ночью или в пещерах не часто удаётся. Тем не менее они могут быть найдены в больших количествах рядом с могилами, кладбищами и катакомбами."
     },
     "raiders" : {
-    	"title" : "Zombie and Skeleton Raiders",
-    	"line1" : "Technically this are just a zombies/skeletons, which ride an undead horses. Zombie Raider spawns with a sword in hand on a Zombie horses. Skeleton Raider spawns with bow in hand on a Skeleton horse. For sure its horses are hostile, and will try to kill you even if its rider was killed."
+    	"title" : "Скелеты и зомби наездники",
+    	"line1" : "По сути это обычные зомби и скелеты, спаунящиеся верхом на лошадях. Естественно, как и сам наездник, лошадь так же является соответствующей ему нежитью. Зомби наездники спаунятся с мечом в руках, скелеты же с луком. Будьте уверены, угрозу для вас представляют как сами наездники, так и их лошади, которые непременно попытаются вас убить, даже если их всадник уже уничтожен."
     },
     "villagers" : {
-    	"title" : "Villagers - Undertaker",
-    	"line1" : "As you may know this mod adds additional house to the villages - undertaker house, which have an own villager - undertaker. This villager can sell you a chisel, candles and any type of skull."
+    	"title" : "Жители - Гробовщик",
+    	"line1" : "Как вы, возможно, уже знаете этот мод добавляет новое здание в деревни - дом гробовщика. Спаунящийся в нём гробовщик может продать вам резец, свечи, а так же все виды черепов."
     }
 }
