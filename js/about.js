@@ -200,6 +200,16 @@ app.controller("AboutStructuresCtrl", ['$scope', '$http', 'PageService', functio
     }
 }]);
 
+app.controller("AboutCommandsCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "commands") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+        });
+    }
+}]);
+
 app.controller("AboutMenuCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.aboutMenu = {};
 
