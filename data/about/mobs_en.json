@@ -2,7 +2,7 @@
     "title" : "Mobs",
     "pets" : {
 	    "title" : "Undead pets.",
-	    "line1" : "There are several types of mobs added by this mod. Firstly it are undead pets - zombie and skeleton cats, dogs and horses. This mobs are hostile and will attack any players which come close enought to them. Furthermore zombie pets, like ordinary zombie will attack villagers, wolves, cats and horses, which will be transformed into zombies at death.",
+	    "line1" : "There are several types of mobs added by this mod. Firstly it are undead pets - zombie, husk and skeleton cats, dogs and horses. This mobs are hostile and will attack any players which come close enought to them. Furthermore zombie pets, like ordinary zombie will attack villagers, wolves, cats and horses, which will be transformed into zombies at death.",
 	    "line2" : "Zombie cats and dogs stronger then its lived forms. At the same time skeleton cats and dogs almost twice faster but have only half heath of its lived forms.",
 	    "line3" : "As for undead horses - unlike minecraft undead horses this horses, like any another undead mobs hostile, burn under the sun light and can wear armor.",
 	    "line4" : "All undead pets can be naturally spawned in the world at night or in dark places in the same biomes as its lived forms. Furthermore it can be spawned by proper types of graves and spawners."
