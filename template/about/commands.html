@@ -1,0 +1,46 @@
+<div ng-controller="AboutCommandsCtrl">
+    <h2>{{globalData.menu_about}} - {{about.title}}</h2>
+
+    <p>{{about.line1}}</p>
+    <p>{{about.line2}}</p>
+    <p class="code">/Gravestone ...</p>
+    <p>{{about.line3}}</p>
+    <ul class="code">
+        <li>/gravestone ...</li>
+        <li>/GS ...</li>
+        <li>/gs ...</li>
+    </ul>
+
+
+    <h3>{{about.title}} - {{about.graves.title}}</h3>
+    <p class="code">/gs commands_list</p>
+    <p>{{about.graves.line1}}</p>
+
+    <p class="code">/gs fill_grave &lt;grave x coordinate&gt; &lt;grave y coordinate&gt; &lt;grave z coordinate&gt;  &lt;chest x coordinate&gt; &lt;chest y coordinate&gt; &lt;chest z coordinate&gt;</p>
+    <p>{{about.graves.line2}}</p>
+
+
+    <h3>{{about.title}} - {{about.extended.title}}</h3>
+    <p class="code">/gs getStatue &lt;player name&gt; &lt;material&gt;</p>
+    <p>{{about.extended.line1}}</p>
+
+    <p class="code">/gs getCorpse &lt;player name&gt;</p>
+    <p>{{about.extended.line2}}</p>
+
+    <p class="code">/gs generate  &lt;structure name&gt; &lt;x coordinate&gt; &lt;z coordinate&gt; &lt;direction&gt;</p>
+    <p>{{about.extended.line3}}</p>
+    <ul class="code">
+        <li>catacombs - {{about.extended.line3_catacombs}}</li>
+        <li>memorial - {{about.extended.line3_memorial}}</li>
+        <li>grave - {{about.extended.line3_grave}}</li>
+        <li>opened_grave - {{about.extended.line3_opened_grave}}</li>
+        <li>cemetery - {{about.extended.line3_cemetery}}</li>
+        <li>undertaker - {{about.extended.line3_undertaker}}</li>
+    </ul>
+    <p>{{about.extended.line4}}</p>
+
+    <p class="code">/gs catacombs_part  &lt;part name&gt; &lt;direction&gt; &lt;x coordinate&gt; &lt;y coordinate&gt;  &lt;z coordinate&gt; &lt;level&gt;</p>
+    <p>{{about.extended.line5}}</p>
+    <p>{{about.extended.line6}}</p>
+
+</div>
