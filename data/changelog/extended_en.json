@@ -1,3 +1,22 @@
 {
-    "inDevelopment" : "This module still in development."
+    "title" : "Change Log - \"Entended\" module",
+    "v1_0_0" : {
+        "line1" : "First release"
+    },
+    "v1_0_1" : {
+        "line1" : "Updated to Minecraft 1.9.4",
+        "line2" : "Fix \"chisel\" name",
+        "line3" : "Fix \"piles of bones\" name",
+        "line4" : "Fix pets' corpses rendering."
+    },
+    "v1_0_2" : {
+        "line1" : "Updated to Minecraft 1.10.2"
+    },
+    "v1_0_3" : {
+        "line1" : "Fix game crash"
+    },
+    "v1_0_4" : {
+        "line1" : "Fix game crash at skeleton pets spawn",
+        "line2" : "Update German localization(made by MadByteDE)"
+    }
 }

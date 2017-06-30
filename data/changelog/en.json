@@ -1,6 +1,41 @@
 {
     "title" : "Change Log - \"Graves\" module",
     "v1_0_0" : {
-        "line1" : ""
+        "line1" : "Updated to Minecraft 1.8.9."
+    },
+    "v1_0_1" : {
+        "line1" : "Updated to Minecraft 1.9.4 and 1.10.2",
+        "line2" : "Small fixes and optimization + some API bugfixes",
+        "line3" : "Compatible with \"extended\" module"
+    },
+    "v1_0_2" : {
+        "line1" : "Fix EnderIO compatibility"
+    },
+    "v1_0_3" : {
+        "line1" : "Fix left hand inventory bug"
+    },
+    "v1_0_4" : {
+        "line1" : "Fix NPE bug at baby ocelot death(babyMobs mod)",
+        "line2" : "Update Portuguese localization(made by Wenlfs)"
+    },
+    "v1_0_5" : {
+        "line1" : "Fix console command bug",
+        "line2" : "Some fixes for Extended module"
+    },
+    "v1_0_6" : {
+        "line1" : "Update German localization(made by MadByteDE)"
+    },
+    "v1_0_7" : {
+        "line1" : "Updated to Minecraft 1.11.2",
+        "line2" : "Fixed mossy skeleton graves",
+        "line3" : "\"SavedItemsCount\" config was replaced by \"AmountOfSavedItems\"",
+        "line4" : "\"RestrictGraveGenerationInArea\" config was changed a little - dimension id was added so this config can be applied for any dimension separately"
+    },
+    "v1_0_8" : {
+        "line1" : "Fix server crash.",
+        "line2" : "Fix localization"
+    },
+    "v1_0_9" : {
+        "line1" : "Fix compatibility with Baubles and other mods"
     }
 }
