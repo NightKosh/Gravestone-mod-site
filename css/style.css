@@ -36,7 +36,7 @@ h2 {
 h3 {
   margin: 15px 0 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #8a8a79;
 }
@@ -205,6 +205,40 @@ main #content iframe {
 main #content iframe.download_widget {
   height: auto;
   border: none;
+}
+main #content .highlight {
+  padding: 5px 0;
+}
+main #content .highlight span {
+  color: #c0f048;
+  min-width: 16px;
+  width: auto;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+main #content .highlight span.recipes {
+  background: url("../images/recipes.png");
+}
+main #content .highlight span.server {
+  background: url("../images/server.png");
+}
+main #content .highlight span.performance {
+  background: url("../images/performance.png");
+}
+main #content .highlight span.compatibility {
+  background: url("../images/compatibility.png");
+}
+main #content .highlight span.structure {
+  background: url("../images/structure.png");
+}
+main #content .highlight span.mobs {
+  background: url("../images/mobs.png");
+}
+main #content .highlight span.debug {
+  background: url("../images/debug.png");
 }
 main #content .code {
   color: #c0f048;

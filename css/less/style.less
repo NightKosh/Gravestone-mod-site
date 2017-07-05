@@ -57,7 +57,7 @@ h2 {
 h3 {
   margin: 15px 0 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: @text_color;
 }
@@ -232,6 +232,40 @@ main {
       &.download_widget {
         height: auto;
         border: none;
+      }
+    }
+    .highlight {
+      padding: 5px 0;
+      span {
+        color: @link_color;
+        min-width: 16px;
+        width: auto;
+        height: 16px;
+        display: inline-block;
+        margin-right: 5px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        &.recipes {
+          background: url("../images/recipes.png");
+        }
+        &.server {
+          background: url("../images/server.png");
+        }
+        &.performance {
+          background: url("../images/performance.png");
+        }
+        &.compatibility {
+          background: url("../images/compatibility.png");
+        }
+        &.structure {
+          background: url("../images/structure.png");
+        }
+        &.mobs {
+          background: url("../images/mobs.png");
+        }
+        &.debug {
+          background: url("../images/debug.png");
+        }
       }
     }
     .code {

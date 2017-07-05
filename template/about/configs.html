@@ -1,0 +1,118 @@
+<div ng-controller="AboutConfigsCtrl">
+    <h2>{{globalData.menu_about}} - {{about.title}}</h2>
+
+    <p>{{about.line1}}</p>
+    <p>{{about.line2}}</p>
+
+    <ul class="code highlight">
+        <li><span class="recipes"></span> - {{about.line_recipes}}</li>
+        <li><span class="mobs"></span> - {{about.line_mobs}}</li>
+        <li><span class="structure"></span> - {{about.line_structure}}</li>
+        <li><span class="performance"></span> - {{about.line_performance}}</li>
+        <li><span class="compatibility"></span> - {{about.line_compatibility}}</li>
+        <li><span class="server"></span> - {{about.line_server}}</li>
+        <li><span class="debug"></span> - {{about.line_debug}}</li>
+    </ul>
+
+    <p>{{about.line3}}</p>
+    <p class="code">"MINECRAFT_FOLDER/configs/GraveStoneMod/GraveStone.cfg"</p>
+
+
+    <h3>{{about.title}} - {{about.graves.title}}</h3>
+
+    <p class="highlight"><span>GeneratePlayersGraves</span> - {{about.graves.line1}}</p>
+    <p class="highlight"><span>GeneratePetsGraves</span> - {{about.graves.line2}}</p>
+    <p class="highlight"><span>GenerateVillagersGraves</span> - {{about.graves.line3}}</p>
+    <p class="highlight"><span>GenerateSwordGraves</span> - {{about.graves.line4}}</p>
+    <p class="highlight"><span>GenerateGravesInLava</span> - {{about.graves.line5}}</p>
+    <p class="highlight"><span class="server"></span><span>OnlyOwnerCanLootGrave</span> - {{about.graves.line6}}</p>
+    <p class="highlight"><span>AllowToPlaceGravesEveryWhere</span> - {{about.graves.line7}}</p>
+    <p class="highlight"><span>AmountOfSavedItems</span> - {{about.graves.line8}}</p>
+    <p class="highlight"><span class="server"></span><span>RemoveEmptyGraves</span> - {{about.graves.line9}}</p>
+    <p class="highlight"><span class="server"></span><span>ShowGravesRemovingMessages</span> - {{about.graves.line10}}</p>
+    <p class="highlight"><span class="performance"></span><span>RenderGravesFlowers</span> - {{about.graves.line11}}</p>
+    <p class="highlight"><span class="performance"></span><span>VanillaRendererForSwordsGraves</span> - {{about.graves.line12}}</p>
+    <p class="highlight"><span class="server"></span><span>RestrictGraveGenerationInArea</span> - {{about.graves.line13}}</p>
+
+    <p>{{about.graves.line14}}</p>
+    <ul class="highlight">
+        <li><span class="compatibility"></span><span>StoreBattlegearItems</span> - {{about.graves.line_battlegear}}</li>
+        <li><span class="compatibility"></span><span>StoreTheCampingModItems</span> - {{about.graves.line_camping}}</li>
+        <li><span class="compatibility"></span><span>StoreBaublesItems</span> - {{about.graves.line_baubles}}</li>
+        <li><span class="compatibility"></span><span>StoreMaricultureItems</span> - {{about.graves.line_mariculture}}</li>
+        <li><span class="compatibility"></span><span>StoreRpgInventoryItems</span> - {{about.graves.line_rpg}}</li>
+        <li><span class="compatibility"></span><span>StoreGalacticraftItems</span> - {{about.graves.line_galacticraft}}</li>
+        <li><span class="compatibility"></span><span>StoreBackpacksItems</span> - {{about.graves.line_backpacks}}</li>
+        <li><span class="compatibility"></span><span>EnableArsMagicaSoulbound</span> - {{about.graves.line_arsmagica}}</li>
+        <li><span class="compatibility"></span><span>EnableEnderIOSoulbound</span> - {{about.graves.line_enderio}}</li>
+        <li><span class="compatibility"></span><span>EnableTwilightForestCharmsOfKeeping</span> - {{about.graves.line_twilightforest}}</li>
+        <li><span class="compatibility"></span><span>AddThaumcraftSwordsAsGravestones</span> - {{about.graves.line_thaumcraft}}</li>
+    </ul>
+
+
+    <h3>{{about.title}} - {{about.extended.title}}</h3>
+
+    <p class="highlight"><span class="structure"></span><span class="compatibility"></span><span>StructuresDimensionId</span> - {{about.extended.line1}}</p>
+
+    <p class="highlight"><span class="structure"></span><span>GenerateCatacombs</span> - {{about.extended.line2}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsGenerationChance</span> - {{about.extended.line3}}</p>
+    <p class="highlight"><span class="structure"></span><span>MaximumCatacombsGenerationHeight</span> - {{about.extended.line4}}</p>
+    <p class="highlight"><span class="structure"></span><span>GenerateCatacombsGraveyard</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMinRoomsCountAt1Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMaxRoomsCountAt1Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMinRoomsCountAt2Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMaxRoomsCountAt2Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMinRoomsCountAt3Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMaxRoomsCountAt3Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMinRoomsCountAt4Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>CatacombsMaxRoomsCountAt4Level</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="performance"></span><span class="structure"></span><span>GeneratePilesOfBones</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="structure"></span><span>GenerateSingleGraves</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>GravesGenerationChance</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>GenerateGravesInMushroomBiomes</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="structure"></span><span>GenerateMemorials</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>MemorialsGenerationChance</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="structure"></span><span>GenerateCemeteries</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>GenerateVillageMemorials</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="structure"></span><span>GenerateUndertaker</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="mobs"></span><span>SpawnMobsByGraves</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnMobAtGraveDestruction</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>GravesMobsSpawnChance</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>GravesMobsSpawnRate</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="performance"></span><span>CemeteryFogEnabled</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span>EnableNightStone</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span>EnableThunderStone</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="server"></span><span>ShowNightStoneMessage</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span>ReplaceHauntedChest</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="recipes"></span><span>CraftableCreeperStatues</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="recipes"></span><span>CraftableWitherSpawner</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="recipes"></span><span>CraftableSpawners</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="recipes"></span><span>CraftableNightStone</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="recipes"></span><span>CraftableThunderStone</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="recipes"></span><span>HardAltarRecipe</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="mobs"></span><span>SpawnZombieDogsInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnZombieCatsInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkeletonDogsInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkeletonCatsInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnUndeadHorses</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkeletonRaidersInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnZombieRaidersInTheWorld</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkullCrawlersAtMobsDeath</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkullCrawlersAnBoneBlockDestruction</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="mobs"></span><span>SpawnSkullCrawlersAtPileBonesDestruction</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="compatibility"></span><span class="mobs"></span><span>SpawnMoCreaturesMobs</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="compatibility"></span><span>EnableForestryBackpacks</span> - {{about.extended.line}}</p>
+    <p class="highlight"><span class="compatibility"></span><span>EnableAntiqueAtlasDeathMarkers</span> - {{about.extended.line}}</p>
+
+    <p class="highlight"><span class="debug"></span><span>DebugMode</span> - {{about.extended.line}}</p>
+
+</div>
