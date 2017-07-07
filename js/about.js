@@ -111,6 +111,36 @@ app.controller("AboutSpawnerCtrl", ['$scope', '$http', 'PageService', function($
     }
 }]);
 
+app.controller("AboutBlocksCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "blocks") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+        });
+    }
+}]);
+
+app.controller("AboutItemsCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "items") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+        });
+    }
+}]);
+
+app.controller("AboutRecipesCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
+    $scope.about = {};
+
+    if (PageService.getPageParams().page == "about" && PageService.getPageParams().sub_page == "recipes") {
+        $http.get(PageService.getDataPath()).success(function (data, status, headers, config) {
+            $scope.about = data;
+        });
+    }
+}]);
+
 app.controller("AboutMobsCtrl", ['$scope', '$http', 'PageService', function($scope, $http, PageService) {
     $scope.about = {};
 
