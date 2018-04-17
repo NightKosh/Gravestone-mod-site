@@ -10,8 +10,8 @@
     "crawlers" : {    
 	    "title" : "Skull Crawlers.",
 	    "line1" : "Skull Crawlers are small spider like undead creatures. Its behavior similar to spiders and silverfishes. It can climb over walls like spiders, hide in a bone blocks and as a piles of bones and summon another skull crawlers from nearest bone blocks.",
-	    "line2" : "There are 3 types of skull crawlers: Zombie Skull Crawlers, Skeleton Skull Crawlers and Wither Skull Crawlers. Each of them apply own type of negative potion effect at attack: Skeleton Skull Crawlers - slowness, Zombie Skull Crawlers - hunger, Wither Skull Crawlers - wither.",
-	    "line3" : "This mobs can't be naturally spawned in the world like another creatures(except Wither Skull Crawlers - it can be spawned in nether) but every time you kill a skeleton, zombie or wither skeleton, there is a 10% chace to spawn proper type of Skull Crawler.",
+	    "line2" : "There are 6 types of skull crawlers: Zombie Skull Crawlers, Zombie Pigman Skull Crawlers, Husk Skull Crawlers, Skeleton Skull Crawlers, Stray Skull Crawlers and Wither Skull Crawlers. Husk, Stray and Wither Skull Crawlers apply own type of negative potion effect at attack: Stray Skull Crawlers - slowness, Husk Skull Crawlers - hunger, Wither Skull Crawlers - wither.",
+	    "line3" : "This mobs can't be naturally spawned in the world like another creatures(except Wither Skull Crawlers - it can be spawned in nether) but every time you kill a skeleton, stray, zombie, zombie pigman or wither skeleton, there is a 10% chace to spawn proper type of Skull Crawler.",
 	    "line4" : "At death this mobs drop bones/rotten flesh and its skull(as a rare drop)."
     },
     "skeletons" : {
