@@ -184,6 +184,15 @@ app.controller("AboutMobsCtrl", ['$scope', '$http', 'PageService', function($sco
                 path : 'images/img/mobs/raiders/',
                 thumb : true
             };
+            $scope.about.sludge.img = {
+                images : [
+                    "1.png",
+                    "2.png",
+                    "3.png"
+                ],
+                path : 'images/img/mobs/sludge/',
+                thumb : true
+            };
             $scope.about.villagers.img = {
                 images : [
                     "undertaker.png", "trades.png"
