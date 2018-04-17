@@ -22,6 +22,12 @@
     	"title" : "Zombie and Skeleton Raiders",
     	"line1" : "Technically this are just a zombies/skeletons, which ride an undead horses. Zombie Raider spawns with a sword in hand on a Zombie horses. Skeleton Raider spawns with bow in hand on a Skeleton horse. For sure its horses are hostile, and will try to kill you even if its rider was killed."
     },
+    "sludge" : {
+    	"title" : "Toxic Sludge",
+    	"line1" : "This is a hostile, slime like mob which can be rarely spawned in any owerworld biomes in the darkness, lower than 30 blocks. It can be spawned of the same size as \"vanilla\" slimes, and it deals damage and dies in the same way. Small species of those slimes drops toxic slime at death.",
+    	"line2" : "But don't be fooled by his weak appearance - it is more dangerous than its \"vanilla\" relative. At first those slimes much more carnivorouse so they can contain items inside of it such as bones, rotten flesh, spider eyes, strings, arrows and even corpses of unlucky mobs, in big species.",
+		"line3" : "Secondly those slimes really toxic. It applies rust potion effect on any mobs at colliding(except another slimes), which slowly corrode your armor and tools, and melts some blocks: stone and mossy stone to cobblestone, stone bricks and mossy stone bricks to cracked stone and any type of gras blocks to dirt. Furthermore middle and big species create block of toxic water at death."
+    },
     "villagers" : {
     	"title" : "Villagers - Undertaker",
     	"line1" : "As you may know this mod adds additional house to the villages - undertaker house, which have an own villager - undertaker. This villager can sell you a chisel, candles and any type of skull."
