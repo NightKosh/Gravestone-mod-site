@@ -188,7 +188,11 @@ app.controller("AboutMobsCtrl", ['$scope', '$http', 'PageService', function($sco
                 images : [
                     "1.png",
                     "2.png",
-                    "3.png"
+                    "3.png",
+                    "4.png",
+                    "5.png",
+                    "6.png",
+                    "7.png"
                 ],
                 path : 'images/img/mobs/sludge/',
                 thumb : true
